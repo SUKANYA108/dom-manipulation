@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color:#333;
+}
+.image {
+    height: 100px;
+    width: auto;
+    animation-name: rotatingImage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: flex-start;
+  }
+  @keyframes rotatingImage{
+    0% { 
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+    100% { 
+        transform: rotate3d(1, 1, 1, 360deg); 
+    }
+}
+    
+header {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    margin: 10px 0;
+    text-align: center;
+    background-color:black;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+form {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);   
+    display:grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    display:flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+h1{
+    color:white;
+}
+p{
+    color:white;
+}
+footer{
+    text-align: end;
+    color:white;
+    font-weight: 200;
+    display:flex;
+    justify-content: baseline;
+}
+
+ 

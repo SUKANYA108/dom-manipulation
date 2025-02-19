@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="dom.css">
+    <link rel="icon" href="favicon.io.ico" type="image/x-icon">
+</head>
+    <header>
+        <img class="image" src="https://static.vecteezy.com/system/resources/previews/024/958/733/large_2x/glossy-3d-register-now-button-push-button-badge-seal-stamp-tag-template-registration-button-register-now-sign-png.png" > 
+        <h1>Student Registration System</h1>
+        <p>Register students' details and manage records with ease.</p>
+    </header>
+    
+    <nav>
+        <a href="#form-section">Register</a> | <a href="#display-section">View Records</a>
+    </nav>
+
+
+    <section id="form-section">
+        <h2>Register Student</h2>
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="studentID">Student ID:</label>
+            <input type="number" id="studentID" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="number" id="contactNumber" required>
+
+            <button type="button" onclick="addStudent()">Add Student</button>
+        </form>
+    </section>
+
+    <section id="display-section">
+        <h2>Registered Students</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Email ID</th>
+                    <th>Contact No.</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <footer>
+        <span>Copyright &copy;2024 Student Registration Form.</span>
+    <span>
+        <a href="#privacy-policy">Privacy policy</a>
+        <a href="#terms-&-service">Terms of Service</a>
+    </span>
+    </footer>
+    
+
+    <script src="dom.js"></script>
+</body>
+</html>
